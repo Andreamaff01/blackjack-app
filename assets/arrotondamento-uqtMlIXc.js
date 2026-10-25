@@ -1,0 +1,1 @@
+var e=Object.freeze({kind:`FLOOR`}),t=`per difetto (verso il basso)`,n=Object.freeze({kind:`NEAREST`,tie:`HALF_AWAY_FROM_ZERO`}),r=`al più vicino, i mezzi lontano da zero`,i=Object.freeze({kind:`TRUNCATE`}),a=`verso lo zero (si tolgono i decimali)`;export{e as a,a as i,r as n,i as o,t as r,n as t};
