@@ -1,6 +1,6 @@
 // Service worker (D-016, ADR-0014): l'app funziona offline dopo la prima apertura. Pagine: prima la rete, poi la copia; file con
 // l'impronta nel nome (/assets/): prima la copia. Cambiare VERSIONE a ogni rilascio per buttare le copie vecchie.
-const VERSIONE = 'bjqa-v1';
+const VERSIONE = 'bjqa-v2';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSIONE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './icona.svg'])));
   self.skipWaiting();
